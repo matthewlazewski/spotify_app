@@ -28,6 +28,14 @@ const AlbumsList = ({ albums }) => {
                                             <img src={music} alt="" />
                                         )}
                                     </a>
+                                    <Card.Body>
+                                        <Card.Title>{album.name}</Card.Title>
+                                        <Card.Text>
+                                            <small>
+                                                {album.artists.map((artist) => artist.name.join(', '))}
+                                            </small>
+                                        </Card.Text>
+                                    </Card.Body>
                                 </Card>
                             </React.Fragment>
                         )
@@ -37,3 +45,5 @@ const AlbumsList = ({ albums }) => {
         </React.Fragment>
     )
 };
+
+export default AlbumsList;

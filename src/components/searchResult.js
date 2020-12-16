@@ -5,6 +5,7 @@ import AlbumsList from './AlbumsList';
 const SearchResult = (props) => {
     const { result, setCategory, selectedCategory } = props;
     const { albums, artists, playlist } = result;
+    
     return (
         <React.Fragment>
             <div className="search-buttons">
